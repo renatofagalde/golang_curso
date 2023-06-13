@@ -5,3 +5,4 @@
 ##pacotes
 para criar um modulo: go mod init modulo
 um modulo é o equivalente ao pom ou package.json
+go build, compila tudo que está na raiz para baixo

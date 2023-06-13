@@ -6,3 +6,9 @@
 para criar um modulo: go mod init modulo
 um modulo é o equivalente ao pom ou package.json
 go build, compila tudo que está na raiz para baixo
+
+importando pacotes:
+    ```go get github.com/badoux/checkmail```
+<br/>
+removendo pacotes não utilizados:
+    ```go mod tidy```

@@ -1,6 +1,10 @@
 package main
 
-import "fmt"
+import (
+	fmt "fmt"
+	"math/rand"
+	"time"
+)
 
 func main() {
 	var numero int8 = 100
@@ -27,7 +31,11 @@ func main() {
 	fmt.Println(char)
 
 	var booleano bool = true
-	fmt.Println(booleano)
+
+	if hour := time.Now().Hour(); hour > (rand.Intn(20) + 1) {
+		booleano = false
+	}
+	fmt.Println("Testanto valor booleano  ", booleano)
 
 	var erro error
 	fmt.Println(erro)

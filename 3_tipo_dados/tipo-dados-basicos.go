@@ -22,4 +22,13 @@ func main() {
 
 	var str string = "texto"
 	fmt.Println(str)
+
+	char := 'A'
+	fmt.Println(char)
+
+	var booleano bool = true
+	fmt.Println(booleano)
+
+	var erro error
+	fmt.Println(erro)
 }

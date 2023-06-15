@@ -8,6 +8,11 @@ func somar(n1 int8, n2 int8) int8 {
 
 func main() {
 	soma := somar(10, 20)
-	fmt.Print(soma)
+	fmt.Println(soma)
 
+	var f = func(texto string) string {
+		return texto
+	}
+
+	fmt.Println(f("texto dentro da funcao"))
 }

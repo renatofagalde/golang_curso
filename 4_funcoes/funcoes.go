@@ -6,6 +6,12 @@ func somar(n1 int8, n2 int8) int8 {
 	return n1 + n2
 }
 
+func calculo(n1, n2 int) (soma, subtracao int) {
+	soma = n1 + n2
+	subtracao = n1 - n2
+	return soma, subtracao
+}
+
 func main() {
 	soma := somar(10, 20)
 	fmt.Println(soma)
@@ -13,6 +19,8 @@ func main() {
 	var f = func(texto string) string {
 		return texto
 	}
-
 	fmt.Println(f("texto dentro da funcao"))
+
+	soma01, subtracao := calculo(10, 20)
+	fmt.Println("Valores retornados em multiplas funcoes soma: %d, subtracao: %d", soma01, subtracao)
 }

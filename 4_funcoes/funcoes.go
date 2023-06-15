@@ -21,6 +21,9 @@ func main() {
 	}
 	fmt.Println(f("texto dentro da funcao"))
 
-	soma01, subtracao := calculo(10, 20)
-	fmt.Println("Valores retornados em multiplas funcoes soma: %d, subtracao: %d", soma01, subtracao)
+	soma01, subtracao01 := calculo(10, 20)
+	fmt.Println("Valores retornados em multiplas funcoes soma: %d, subtracao01: %d", soma01, subtracao01)
+
+	_, subtracao02 := calculo(10, 20)
+	fmt.Println("Valor da subtracao ignorando a soma ", subtracao02)
 }

@@ -1,6 +1,7 @@
 package main
 
 import (
+	"errors"
 	fmt "fmt"
 	"math/rand"
 	"time"
@@ -37,6 +38,6 @@ func main() {
 	}
 	fmt.Println("Testanto valor booleano  ", booleano)
 
-	var erro error
+	var erro error = errors.New("Erro interno")
 	fmt.Println(erro)
 }

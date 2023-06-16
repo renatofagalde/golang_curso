@@ -2,6 +2,14 @@ package main
 
 import "fmt"
 
-func main()  {
-	fmt.Println("hello world")
+type usuario struct {
+	nome  string
+	idade uint8
+}
+
+func main() {
+	var u usuario
+	u.nome = "teste"
+	u.idade
+	fmt.pr
 }

@@ -12,7 +12,7 @@ func main() {
 	fmt.Println(arrary1)
 
 	//inferencia
-	array2 := [5]string{"aryton", "ronaldo", "romario", "zico", "emerson sheik"}
+	array2 := [5]string{"ayrton", "ronaldo", "romario", "zico", "emerson sheik"}
 	fmt.Println(array2)
 
 	//outra forma de declarar

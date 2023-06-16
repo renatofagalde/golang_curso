@@ -36,4 +36,20 @@ func main() {
 
 	array2[1] = "ronaldo nazário"
 	fmt.Println(array2)
+
+	//arrays internos
+	fmt.Println("---------------------")
+	slice3 := make([]float32, 3, 4) //slice com o make, sempre dobra a capacidade quando usar um tamanho maior
+	fmt.Println(slice3)
+	fmt.Println(len(slice3))                       //tamanho
+	fmt.Println("slice capacidade: ", cap(slice3)) //capacidade
+
+	//estourando a capacidade do "array", que neste caso é um slice, o mesmo que um array interno
+	slice3 = append(slice3, 1)
+	slice3 = append(slice3, 1)
+
+	fmt.Println(slice3)
+	fmt.Println(len(slice3))                       //tamanho
+	fmt.Println("slice capacidade: ", cap(slice3)) //capacidade
+
 }

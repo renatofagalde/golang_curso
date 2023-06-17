@@ -3,7 +3,6 @@ package main
 import "fmt"
 
 func fibonacci(posicao uint) uint {
-	// TODO
 	// usar o memoization
 
 	if posicao <= 1 {

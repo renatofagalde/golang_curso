@@ -2,10 +2,6 @@ package main
 
 import "fmt"
 
-func inverterSinal(numero int) int {
-	return numero * -1
-}
-
 func inverterSinalComPonteiro(numero *int) int {
 
 	//fmt.Println("numero: ", &numero, " memória: ", numero)

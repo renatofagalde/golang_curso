@@ -15,4 +15,4 @@
 
 executando o modulo:
 
-`` ./linha-comando servidores ``
+``./linha-comando servidores``

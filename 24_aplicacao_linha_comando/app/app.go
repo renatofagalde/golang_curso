@@ -16,7 +16,7 @@ func Gerar() *cli.App {
 	flags := []cli.Flag{
 		cli.StringFlag{
 			Name:  "host",
-			Value: "devbook.com.br",
+			Value: "likwi.com.br",
 		},
 	}
 	app.Commands = []cli.Command{{

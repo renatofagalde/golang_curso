@@ -50,11 +50,20 @@ func buscarIps(c *cli.Context) {
 
 func buscarServidores(c *cli.Context) {
 	host := c.String("host")
-	servidores, erro := net.LookupIP(host)
+	fmt.Println("Procurando servidores...")
+	servidores, erro := net.LookupNS(host)
 	if erro != nil {
 		log.Fatal(erro)
 	}
+
+	//exibindo struct
 	for _, servidor := range servidores {
 		fmt.Println(servidor)
 	}
+
+	//exibindo apenas o valor
+	for _, servidor := range servidores {
+		fmt.Println(servidor.Host)
+	}
+
 }

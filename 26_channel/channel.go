@@ -9,11 +9,16 @@ func main() {
 	canal := make(chan string) //chan palavra reservada para criar canal
 	go escrever("olá mundo", canal)
 
-	for {
-		mensagem, canalAberto := <-canal
-		if !canalAberto {
-			break
+	/*	for {
+			mensagem, canalAberto := <-canal
+			if !canalAberto {
+				break
+			}
+			fmt.Println(mensagem)
 		}
+	*/
+	//usando de forma simplificada
+	for mensagem := range canal {
 		fmt.Println(mensagem)
 	}
 }

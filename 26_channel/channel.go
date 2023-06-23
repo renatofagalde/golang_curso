@@ -8,7 +8,14 @@ import (
 func main() {
 	canal := make(chan string) //chan palavra reservada para criar canal
 	go escrever("olá mundo", canal)
-	fmt.Println(<-canal)
+
+	for {
+		mensagem, canalAberto := <-canal
+		if !canalAberto {
+			break
+		}
+		fmt.Println(mensagem)
+	}
 }
 
 func escrever(texto string, canal chan string) {
@@ -16,4 +23,6 @@ func escrever(texto string, canal chan string) {
 		canal <- texto
 		time.Sleep(time.Second)
 	}
+
+	close(canal) //fechando o canal
 }

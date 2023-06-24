@@ -9,7 +9,7 @@ func TestTipoDeEndereco(t *testing.T) {
 	tipoNoTeste := TipoDeEndereco(enderecoParaTeste)
 
 	if tipoNoTeste != tipoEsperado {
-		t.Errorf("O tipo recebido é diferente do esperado! Esperava %s e recebeu %s",
+		t.Errorf("O tipo recebido é diferente do esperado! Esperava \"%s\" e recebeu \"%s\"",
 			tipoEsperado, tipoNoTeste)
 	}
 

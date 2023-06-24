@@ -23,7 +23,5 @@ func TestTipoDeEndereco(t *testing.T) {
 			t.Errorf("O tipo recebido é diferente do esperado! Esperava \"%s\" e recebeu \"%s\"",
 				cenario.enderecoEsperado, tipoNoTeste)
 		}
-
 	}
-
 }

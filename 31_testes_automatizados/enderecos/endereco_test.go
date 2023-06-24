@@ -4,12 +4,13 @@ package enderecos
 import "testing"
 
 func TestTipoDeEndereco(t *testing.T) {
-	enderecoParaTeste := "Avenida Paulista"
+	enderecoParaTeste := "Avenide Paulista"
 	tipoEsperado := "Avenida"
 	tipoNoTeste := TipoDeEndereco(enderecoParaTeste)
 
 	if tipoNoTeste != tipoEsperado {
-		t.Error("O tipo recebido não é o esperado")
+		t.Errorf("O tipo recebido é diferente do esperado! Esperava %s e recebeu %s",
+			tipoEsperado, tipoNoTeste)
 	}
 
 }

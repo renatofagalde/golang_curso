@@ -4,7 +4,7 @@ import "strings"
 
 // TipoDeEndereco localizar o tipo do endereco
 func TipoDeEndereco(endereco string) string {
-	tipos := []string{"rua", "avenida", "estrada", "rodivia"}
+	tipos := []string{"rua", "avenida", "estrada", "rodovia"}
 	primeiraPalavra := strings.Split(strings.ToLower(endereco), " ")[0]
 	achou := false
 	for _, tipo := range tipos {

@@ -1,6 +1,10 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+	"math/rand"
+	"time"
+)
 
 // a ideia é juntar um ou mais canais e colocar num só
 func main() {
@@ -31,6 +35,7 @@ func escrever(texto string) <-chan string {
 	go func() {
 		for {
 			canal <- fmt.Sprintf("valor recebido %s", texto)
+			time.Sleep(time.Millisecond * time.Duration(rand.Intn(2000)))
 		}
 	}()
 

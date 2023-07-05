@@ -40,3 +40,10 @@ go tool cover --func=cobertura.txt
 go tool cover --html=cobertura.txt
 
 ```
+
+### Test
+o arquivo de teste deverá ser criado com o sufixo ``_test``, neste novo arquivo de teste, 
+se o pacote for o mesmo do arquivo que está sendo testado, não precisa fazer import.
+se vc declarar o pacote {nome}_test, os imports serão necessários.
+
+### trocar mesma palavra no arquivo: Ctrl + Alt + Shift + J 

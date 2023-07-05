@@ -1,9 +1,11 @@
 ## packages
 1# pacote main para identificar quando for gerar algo exe
 2# go run primeiro.go
+3# go build
+4# go install
 
 ## pacotes
-para criar um modulo: go mod init modulo
+para criar um modulo: go mod init modulo (não usar "-" no nome)
 um modulo é o equivalente ao pom ou package.json
 go build, compila tudo que está na raiz para baixo
 

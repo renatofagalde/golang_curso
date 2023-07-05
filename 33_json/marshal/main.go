@@ -4,20 +4,15 @@ import (
 	"bytes"
 	"encoding/json"
 	"fmt"
+	"handler"
 	"log"
 )
-
-type cachorro struct {
-	Nome  string `json:"nome"`
-	Raca  string `json:"raca"`
-	Idade uint   `json:"idade"`
-}
 
 func main() {
 	//json.Marshal()  map -> json
 	//json.Unmarshal() json -> map
 
-	java := cachorro{"Java", "Shitzsu", 5}
+	java := cachorro.Cachorro{"java", "shitzsu", 5}
 	fmt.Println(java)
 
 	javaJSON, erro := json.Marshal(java)

@@ -11,6 +11,10 @@ create table usuarios(
 ) engine =innodb;
 ```
 
+### import implicito
+ele é usado quando outra classe irá usar a biblioteca, neste caso a conexao SQL
+
+```_ "github.com/go-sql-driver/mysql"``` // import implicito
 
 ````go mod init banco-de-dados````
 

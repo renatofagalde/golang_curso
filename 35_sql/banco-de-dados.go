@@ -15,9 +15,17 @@ func main() {
 	}
 	defer db.Close()
 
-	//validar conexao
+	//validar conexao com o Ping
 	if erro = db.Ping(); erro != nil {
 		log.Fatal(erro)
 	}
-	fmt.Println(db)
+	fmt.Println("conexão aberta")
+
+	linhas, erro := db.Query("select * from usuarios")
+	if erro != nil {
+		log.Fatal(erro)
+	}
+	defer linhas.Close()
+
+	fmt.Println(linhas)
 }

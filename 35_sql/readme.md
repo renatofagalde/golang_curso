@@ -10,3 +10,9 @@ create table usuarios(
     email varchar(100) not null
 ) engine =innodb;
 ```
+
+
+````go mod init banco-de-dados````
+
+### Download driver mysql
+```` go get github.com/go-sql-driver/mysql````

@@ -1,4 +1,4 @@
-package controller
+package handler
 
 import (
 	"crud/banco"
@@ -13,7 +13,8 @@ import (
 func CriarUsuario(writer http.ResponseWriter, request *http.Request) {
 	payload, erro := io.ReadAll(request.Body)
 	if erro != nil {
-		writer.Write([]byte("Falha ao ler o corpo da requisição"))
+		writer.WriteHeader(http.StatusInternalServerError)
+		writer.Write([]byte(fmt.Sprintf("Erro ao conectar com o BD. Erro: %s", erro)))
 		return
 	}
 

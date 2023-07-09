@@ -1,7 +1,7 @@
 package model
 
 type Usuario struct {
-	id    int    `json:"id"`
+	ID    int    `json:"ID"`
 	Nome  string `json:"nome"`
 	Email string `json:"email"`
 }

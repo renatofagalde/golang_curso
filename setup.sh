@@ -1,7 +1,7 @@
 #!/bin/bash
 
-START_DATE="2025-04-22"
-END_DATE="2025-04-26"
+START_DATE="2026-04-09"
+END_DATE="2026-04-09"
 
 start_ts=$(date -u -d "$START_DATE 00:00:00" +%s)
 end_ts=$(date -u -d "$END_DATE 00:00:00" +%s)
